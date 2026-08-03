@@ -1,7 +1,6 @@
 from fastapi import FastAPI
+from app.routers import root
 
 app = FastAPI()
 
-@app.get("/")
-def read_root():
-    return {"message": "Agentic Healthcare Assistant backend is running"}
+app.include_router(root.router)
