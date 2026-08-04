@@ -1,5 +1,15 @@
+import Hero from "../components/Hero";
+import Features from "../components/Features";
+import Footer from "../components/Footer";
+
 function HomePage() {
-  return <h1>Home Page</h1>;
+  return (
+    <div>
+      <Hero />
+      <Features />
+      <Footer />
+    </div>
+  );
 }
 
 export default HomePage;
